@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Elements</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .box:hover{
+            background-color: yellow;
+        }
+        input:focus {
+            background-color: blue;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:link{
+            color: coral;
+        }
+        a:visited{
+            color: green;
+        }
+        #one::first-letter{
+            background-color: yellow;
+        }
+        .quote::before{
+            content: "O";
+            color: rgb(197, 147, 147);
+        }
+        .quote::after{
+            content: "'";
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <input type="text">
+    <button>보튼</button>
+    <a href="http://naver.com">네이버</a>
+    <p id="one">Nam pulvinar metus ut mauris pellentesque, at consectetur turpis lobortis.</p>
+    <p id="two">Nam a sem maximus arcu convallis malesuada gravida sed dui.</p>
+    <p id="three">Maecenas aliquam erat sit amet orci tincidunt, in fringilla risus elementum.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image.video</title>
+    <style>
+        img {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+alt = 접근성 관점에서 이미지를 스크린 리더에게
+알려줌으로서 이미지를 설명해준다.
+        표면상.. 이미지가 없을경우 대체 텍스트를 제공
+
+width, height = img속성이기는 하나 style로 정의해서 사용하는것이 바람직
+    -->
+    <h3>사진</h3>
+    <img src="cats.jpg " alt="야옹이">
+
+    <h3>비디오</h3>
+    <video width="300" poster="darth-vader.jpg" controls autoplay>
+        <source src="test.mp4" type="video/mp4" />
+    </video>
+
+    <a href="step07.html">이전</a><br>
+    <a href="step09.html">이후</a>
+</body>
+
+</html>

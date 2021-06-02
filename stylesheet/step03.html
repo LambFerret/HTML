@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        .container {
+            background-color: mediumaquamarine;
+        }
+
+        .container > p {
+            background-color: aqua;
+        }
+
+        .container ~p{
+            background-color: skyblue;
+        }
+        .container +p {
+            background-color: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <p>Sed quis eros eu justo aliquam fermentum nec id enim.</p>
+        <div>
+            <p>Vivamus sollicitudin nibh a nisi consectetur venenatis</p>
+        </div>
+    </div>
+    <p>Maecenas feugiat dolor commodo consequat pretium.
+    </p>
+    <p>Donec pulvinar eros quis tempor ornare.
+    </p>
+    <p>Pellentesque vel eros in metus faucibus accumsan.
+    </p>
+    <p>Pellentesque blandit mi id malesuada sagittis.
+    </p>
+</body>
+</html>

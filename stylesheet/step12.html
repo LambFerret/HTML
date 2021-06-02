@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        #one{
+            display: none;
+        }
+        #two {
+            display: inline;
+            background-color: royalblue;
+            width: 1000px;
+            height: 1000px;
+
+        }
+        #three {
+            display: inline-block;
+            width: 600px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>display 속성 테스트</h1>
+    <button id="show">난 버튼이야</button>
+    <p id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ligula nisi, condimentum non ex sed, rutrum ultrices ex. Nam finibus lacinia mi nec dignissim. Sed scelerisque efficitur metus eu blandit. Donec blandit turpis at ante commodo, a malesuada diam fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam turpis mauris, pretium non consequat vel, aliquet in nulla. Proin venenatis sem ut velit elementum, quis accumsan magna pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vel rutrum dui, quis iaculis enim. In maximus erat a ultricies fermentum. Nullam auctor bibendum porttitor. Curabitur varius felis id metus sollicitudin auctor. Duis non urna at purus fermentum gravida eu eu lorem. Duis pellentesque magna euismod ligula dapibus finibus.</p>
+    <hr>
+    <h1>inline vs inline-block</h1>
+    <div>dumdumdumdumdumdumdumdumdumdumdumdum</div>
+    <div id="one">oneoneoneoneoneoneoneoneoneoneoneone</div>
+    <div id="two">twotwotwotwotwotwotwotwotwotwotwotwotwo</div>
+    <div id="three">threethreethreethreethreethree</div>
+    <div>im in danger</div>
+    <script>
+        let isOn = true;
+        document
+        .getElementById("show")
+        .addEventListener("click",function(){
+            if (isOn){
+                document.getElementById("one").style.display = "block";
+                isOn = false;
+            } else {
+                document.getElementById("one").style.display = "none";
+                isOn = true;
+            }
+        });
+    </script>
+</body>
+</html>

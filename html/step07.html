@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, td, th {
+            border : 1px dotted black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h3>table형식으로 출력하기</h3>
+    <table>
+        <caption>친구목록</caption>
+        <colgroup>
+            <col width = "100px"/>
+            <col width = "100px"/>
+            <col width = "100px"/>
+        </colgroup>
+        <thead>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>뚱이</td>
+                <td  rowspan="2">비키니시티</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>징징이</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>다람이</td>
+                <td>텍사스</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="step06.html">이전</a><br>
+    <a href="step08.html">이후</a>
+</body>
+</html>
