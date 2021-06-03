@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<script>
+    //선언적 방식 - function hoisting
+    test1();
+    function test1(){
+        console.log('호출됨!');
+    }
+
+    //함수식
+    // test2(); <- error! hoisting이 안됨 
+    const test2 = function(){
+        console.log('2번 호출됨!');
+    }
+    test2();
+
+    // 참조값 복사 
+    const test3 = test2;
+    test3();
+
+    console.log(typeof test1);
+
+    const plus = function(a,b){
+        return a+b;
+    }
+
+    console.log(plus(10,20))
+
+    const getSum = function(arguments){
+        console.log(arguments.length);
+        return num1+ num2;
+    }
+
+    let result1 = getSum(10,50,10,230,55);
+    console.log(result1);
+</script>
+<body>
+    
+</body>
+</html>

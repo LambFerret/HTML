@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatype    </title>
+        <script>
+            //1. number type
+            let num1 = 10;
+            let num2 = 10.5;
+            console.log(typeof num2); 
+
+            let myname = "뚱이";
+            console.log(typeof myname);
+
+            let run = true;
+            let dont = 10>5;
+            console.log(typeof run, dont);
+
+            let a = undefined; // -> primitive
+            let b = null; // ->잘안씀
+            console.log(typeof a, typeof b);
+
+            c = a+1; // NaN
+            d = b+1; // 1
+            console.log(c,d);
+
+            console.log(a == b, a===b); // true, false
+
+            e = a+"1";
+            f = b+"1";
+            console.log(e,f); //undefined1 , null1
+
+            // object type
+            const obj = {num:1, name:"뚱이", addr:"비키니시티"};
+            // array type
+            const ls = ["뚱이","징징이","다람이"];
+
+            console.log(obj,ls);
+
+            // function type
+            const f = function(){
+
+            }
+            f();
+            // 선언적 함수 
+            function sum(){
+
+            }
+            sum();
+
+
+
+
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>
