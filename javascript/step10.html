@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <script>
+        function send(){
+            alert("전송되었습니다.");
+        }
+        alert("after title");
+        window.onload = function(){
+            alert('onleoad event');
+        document.getElementById("send")
+        .addEventListener("click",function(){});
+        }
+        document.getElementById("inputMsg")
+        .addEventListener("keydown",function(event){
+            if(event.keyCode == 13){
+                alert(document.getElementById("inputMsg").value)
+                
+            }
+        });
+        document.getElementById("inputMsg").focus
+    </script>
+</head>
+<body>
+    <button onclick="javascrpt:send()">전송1</button>
+
+    <button id="send" onclick="javascrpt:send()">전송1</button>
+    <input type="text" id="inputMsg">
+</body>
+<script>
+    alert("after body")
+</script>
+</html>
