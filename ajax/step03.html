@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax simple Get</title>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function () {
+            $('#btn').click(function () {
+
+                $.ajax({
+                    url: 'http://www.acornacademy.co.kr/blockchain/naver_json.jsp',
+                    type: 'GET',
+                    dataType: 'json',
+                    error: function () {
+                        alert('error!')
+                    },
+                    success: function (json) {
+                        console.log(json);
+                        console.log(typeof json);
+                        const cafelistArray = json.cafelist;
+
+                        let html = "<ul>";
+                        for(const obj of cafelistArray){
+                            let name = obj.name;
+                            let clubid = obj.clubid;
+                            html+="<li>"+name + "("+clubid+") </li>"
+                        }
+                            
+                        html += "</ul>";
+                        $("#sel").append(html);
+
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="btn">원래 안된다 이유:외부 url은 ajax로 실행이 불가능</button>
+    <div id="sel">
+
+    </div>
+</body>
+
+</html>
